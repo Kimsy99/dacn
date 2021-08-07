@@ -52,37 +52,51 @@ let ambassador = [
 ];
 const About = () => {
   return (
-    <div>
+    <>
       <Hero title="About Us" />
-      <SecHeader title={"The Team"} />
-      <CardWrapper data={data} />
-      <SecHeader title={"Vision & Mission"} />
-      <VisionMission />
-      <SecHeader title={"What We Do"} />
-      <Infographics>
-        <div className="w-11/12 self-center">
-          <p>
-            Student Consultants from data science and business majors will be
-            selected from a <bold>vigorous application process</bold>. They will
-            provide businesses with customized data solutions under the guidance
-            of industry professionals.
-          </p>
-          <p>
-            The deliverables by student consultants will be vetted by:
-            <ol className="list-decimal">
-              <li>
-                DACN committee members working in Intel, Accenture, Khazanah and
-                more
-              </li>
-              <li>Mentors working as industry professionals at Accenture</li>
-            </ol>
-          </p>
+      <div className="mx-auto divide-y">
+        <div className="py-16">
+          <SecHeader title={"The Team"} />
+          <CardWrapper data={data} />
         </div>
-      </Infographics>
-      <SecHeader title={"Our Ecosystem"} />
-      <SecHeader title={"Student Ambassors"} />
-      <CardWrapper data={ambassador} />
-    </div>
+        <div className="bg-gray-50 py-16">
+          <SecHeader title={"Vision & Mission"} />
+          <VisionMission />
+        </div>
+        <div className="py-16">
+          <SecHeader title={"What We Do"} />
+          <Infographics>
+            <div className="w-11/12 self-center">
+              <p>
+                Student Consultants from data science and business majors will
+                be selected from a <b>vigorous application process</b>. They
+                will provide businesses with customized data solutions under the
+                guidance of industry professionals.
+              </p>
+              <p>
+                The deliverables by student consultants will be vetted by:
+                <ol className="list-decimal">
+                  <li>
+                    DACN committee members working in Intel, Accenture, Khazanah
+                    and more
+                  </li>
+                  <li>
+                    Mentors working as industry professionals at Accenture
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </Infographics>
+        </div>
+        <div className="bg-gray-50 py-16">
+          <SecHeader title={"Our Ecosystem"} className="max-w-screen-xl" />
+        </div>
+        <div className="py-16">
+          <SecHeader title={"Student Ambassors"} />
+          <CardWrapper data={ambassador} className="max-w-screen-xl" />
+        </div>
+      </div>
+    </>
   );
 };
 

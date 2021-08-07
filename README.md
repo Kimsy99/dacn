@@ -40,3 +40,10 @@ These are our 3 main colours besides from black and white:
 Dark Blue: #0F2543
 Blue: #344ED0
 Tealish blue: #83CFE1
+
+
+
+# Questions
+1. Some content repitative, just more detail
+2. Onboard with us now -> on the bottom (btr be on top); hard to find.
+3. add register as student consultant and register as client on home page?

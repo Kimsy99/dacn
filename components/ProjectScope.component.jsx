@@ -25,7 +25,7 @@ const data = [
 ];
 const ProjectScope = () => {
   return (
-    <div className="mx-2">
+    <div className="mx-2 max-w-screen-xl mx-auto">
       <p className="text-center">
         DACN helps clients answer customised <b>problem statements</b> through
         data-driven solutions. We provide value to clients through{" "}
