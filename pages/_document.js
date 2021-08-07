@@ -17,7 +17,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className=" max-w-screen-xl mx-auto">
+        <body className="max-w-screen-xl mx-auto">
           <Main />
           <NextScript />
         </body>

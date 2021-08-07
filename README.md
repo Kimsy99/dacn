@@ -34,3 +34,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # dacn
 # dacn
+
+
+These are our 3 main colours besides from black and white:
+Dark Blue: #0F2543
+Blue: #344ED0
+Tealish blue: #83CFE1
