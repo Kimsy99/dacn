@@ -62,3 +62,26 @@ a {
 
   background-size: cover;
 }
+.image-bg-1{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),url("../public/hero-background.png");
+  min-height: 300px;
+}
+.image-banner{
+  min-height: 300px;
+  
+}
+.home-btn-1{
+  background: #0F2543;
+  color: #83CFE1;
+}
+.home-btn-2{
+  background: #83CFE1;
+  color: #0F2543;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  z-index: 199;
+}

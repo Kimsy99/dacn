@@ -1,9 +1,10 @@
 import React from "react";
-import Hero from "../components/Hero.component";
-import Infographics from "../components/Infographics.component";
-import SecHeader from "../components/SecHeader.component";
-import CardWrapper from "../components/team/CardWrapper.component";
-import VisionMission from "../components/VisionMission.component";
+import Head from "next/head";
+import Hero from "../../components/Hero.component";
+import Infographics from "../../components/Infographics.component";
+import SecHeader from "../../components/SecHeader.component";
+import CardWrapper from "../../components/team/CardWrapper.component";
+import VisionMission from "../../components/VisionMission.component";
 let data = [
   {
     id: 1,
@@ -53,9 +54,14 @@ let ambassador = [
 const About = () => {
   return (
     <>
+      <Head>
+        <title>About DACN</title>
+        <meta name="description" content="Data Analytics Consultancy Network" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero title="About Us" />
       <div className="mx-auto divide-y">
-        <div className="py-16">
+        <div className="py-16 mx-auto max-w-screen-xl">
           <SecHeader title={"The Team"} />
           <CardWrapper data={data} />
         </div>
@@ -75,7 +81,7 @@ const About = () => {
               </p>
               <p>
                 The deliverables by student consultants will be vetted by:
-                <ol className="list-decimal">
+                <ol className="list-decimal	list-inside	">
                   <li>
                     DACN committee members working in Intel, Accenture, Khazanah
                     and more

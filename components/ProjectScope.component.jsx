@@ -32,7 +32,7 @@ const ProjectScope = () => {
         <b>live dashboard creation, final recommendation presentation</b> and a{" "}
         <b>technical model/ eCommerce set-up.</b>
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto w-8/12 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto w-8/12 my-10">
         {data.map((obj) => {
           return (
             <ProjectScopeCard

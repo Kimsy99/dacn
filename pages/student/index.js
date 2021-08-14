@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Hero from "../../components/Hero.component";
 import ProjectScope from "../../components/ProjectScope.component";
 import ProjectScopeCard from "../../components/ProjectScopeCard.component";
@@ -29,11 +30,16 @@ const data = [
 const Student = () => {
   return (
     <>
+      <Head>
+        <title>DACN Students</title>
+        <meta name="description" content="Data Analytics Consultancy Network" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero title="For Students" />
       <div className="mx-auto divide-y">
         <div className="py-16 mx-auto max-w-screen-xl ">
           <SecHeader title={"Our Value Add for you"} />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto w-8/12 my-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto w-8/12 my-10">
             {data.map((obj) => {
               return (
                 <ProjectScopeCard
