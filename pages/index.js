@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import HomeBanner from "../components/HomeBanner.component";
 import ProjectBanners from "../components/ProjectBanners.component";
 import styles from "../styles/Home.module.css";
 
@@ -23,21 +24,22 @@ export default function Home() {
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
             <Link href="/client">
-              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md home-btn-1 md:py-4 md:text-lg md:px-10">
+              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md home-btn-1 md:py-4 md:text-lg md:px-10 hover:ring-4 ">
                 For Client
               </a>
             </Link>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <Link href="/client">
-              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md home-btn-2 md:py-4 md:text-lg md:px-10">
+            <Link href="/student">
+              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md home-btn-2 md:py-4 md:text-lg md:px-10 hover:ring-4">
                 For Students
               </a>
             </Link>
           </div>
         </div>
         <br />
-        <ProjectBanners />
+        <HomeBanner />
+        {/* <ProjectBanners /> */}
       </main>
     </div>
   );

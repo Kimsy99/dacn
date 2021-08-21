@@ -24,7 +24,7 @@ const Navbar = () => {
               src="/blacklogo-transbackground.png"
               alt="DACN Logo"
               width={52}
-              height={52}
+              height={57.407496977}
             />
             <span className="text-xl text-dark font-bold ml-5 md:block hidden">
               Data Analytics Consultancy Network
@@ -76,7 +76,17 @@ const Navbar = () => {
                 </button>
                 <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
                   <li className="">
-                    <Link href="/student">
+                    <Link href="/about#who-we-are">
+                      <a
+                        className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="#data"
+                      >
+                        Who We Are
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link href="/about/#what-we-do">
                       <a
                         className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                         href="#"
@@ -86,17 +96,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="">
-                    <Link href="/student">
-                      <a
-                        className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        Who We Are
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link href="/student">
+                    <Link href="/about/#ambassadors">
                       <a
                         className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                         href="#"
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </button>
                 <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
                   <li className="">
-                    <Link href="/project">
+                    <Link href="/project/#showcase">
                       <a
                         className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                         href="#"
@@ -137,7 +137,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="">
-                    <Link href="/project">
+                    <Link href="/project/#timeline">
                       <a
                         className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                         href="#"
@@ -147,7 +147,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="">
-                    <Link href="/project">
+                    <Link href="/project/#team">
                       <a
                         className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                         href="#"
@@ -165,10 +165,11 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center">
-              Students
-            </a>
-
+            <Link href="/student">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center">
+                Students
+              </a>
+            </Link>
             {/* end */}
           </div>
         </div>

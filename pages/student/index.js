@@ -32,7 +32,10 @@ const Student = () => {
     <>
       <Head>
         <title>DACN Students</title>
-        <meta name="description" content="Data Analytics Consultancy Network" />
+        <meta
+          name="description"
+          content="Students | Data Analytics Consultancy Network"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title="For Students" />

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar.component";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import Footer from "../components/Footer.component";
+import Footer from "../components/FooterNew.component";
 
 function MyApp({ Component, pageProps }) {
   return (

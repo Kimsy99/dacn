@@ -30,7 +30,10 @@ const Client = () => {
     <>
       <Head>
         <title>DACN Clients</title>
-        <meta name="description" content="Data Analytics Consultancy Network" />
+        <meta
+          name="description"
+          content="Clients | Data Analytics Consultancy Network"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title="For Clients" />
