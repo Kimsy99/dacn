@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -26,13 +27,13 @@ function Footer() {
             <div className=" text-base text-color f-f-l">
               <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  DACN Founders
+                  <Link href="/about#who-we-are">DACN Founders</Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  DACN Committee
+                  <Link href="/about#who-we-are">DACN Committee</Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  Student Ambassadors
+                  <Link href="/about#ambassadors">Student Ambassadors</Link>
                 </li>
                 {/* <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   Careers
@@ -44,9 +45,11 @@ function Footer() {
             <div className="my-6 text-base text-color f-f-l">
               <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  Students
+                  <Link href="/student">Students</Link>
                 </li>
-                <li className="cursor-pointer pt-4 lg:py-0">Clients</li>
+                <li className="cursor-pointer pt-4 lg:py-0">
+                  <Link href="/client">Clients</Link>
+                </li>
                 {/* <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   Careers
                 </li>
@@ -60,30 +63,41 @@ function Footer() {
           </div>
           {/* <div className="w-9/12  h-0.5 bg-gray-100 rounded-full" /> */}
           <div className="flex justify-between items-center pt-5 grid grid-cols-5 gap-5 ">
-            <Image
-              src="/icons/facebook.svg"
-              alt="Vercel Logo"
-              width={36}
-              height={36}
-            />
-            <Image
-              src="/icons/instagram.svg"
-              alt="Vercel Logo"
-              width={36}
-              height={36}
-            />
-            <Image
-              src="/icons/linkedin.svg"
-              alt="Vercel Logo"
-              width={36}
-              height={36}
-            />
-            <Image
-              src="/icons/youtube.svg"
-              alt="Vercel Logo"
-              width={36}
-              height={36}
-            />
+            <a href="https://www.facebook.com/DACNMalaysia" target="__blank">
+              <Image
+                src="/icons/facebook.svg"
+                alt="Vercel Logo"
+                width={36}
+                height={36}
+              />
+            </a>
+            <a href="https://www.instagram.com/dacn.malaysia/" target="__blank">
+              <Image
+                src="/icons/instagram.svg"
+                alt="Vercel Logo"
+                width={36}
+                height={36}
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/dacn" target="__blank">
+              <Image
+                src="/icons/linkedin.svg"
+                alt="Vercel Logo"
+                width={36}
+                height={36}
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCFAxwozviUmGi7mobmLBWeg/"
+              target="__blank"
+            >
+              <Image
+                src="/icons/youtube.svg"
+                alt="Vercel Logo"
+                width={36}
+                height={36}
+              />
+            </a>
             <a href="mailto:dacn.malaysia@gmail.com">
               <Image
                 src="/icons/gmail.svg"
