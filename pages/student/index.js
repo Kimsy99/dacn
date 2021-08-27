@@ -40,9 +40,9 @@ const Student = () => {
       </Head>
       <Hero title="Get Involved" />
       <div className="mx-auto divide-y">
-        <div className="py-16 mx-auto max-w-screen-xl bg-gray-50 ">
+        <div className="py-16 mx-auto bg-gray-50 ">
           <SecHeader title={"Our Value Add to Student"} />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto w-8/12 my-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto w-8/12 my-10 max-w-screen-xl ">
             {data.map((obj) => {
               return (
                 <ProjectScopeCard
@@ -55,20 +55,20 @@ const Student = () => {
             })}
           </div>
         </div>
-        <div className="bg-gray-50 py-16">
+        <div className="py-16">
           <SecHeader title={"Student Consultants"} />
           <p className="max-w-screen-xl mx-auto w-auto text-center text-2xl font-light">
             Stay tuned... Coming Soon
           </p>
         </div>
-        <div className=" py-16">
+        <div className="bg-gray-50 py-16">
           <SecHeader title={"Our Student Ambassadors"} />
           <p className="max-w-screen-xl mx-auto w-auto text-center text-2xl font-light">
             Stay tuned... Coming Soon
           </p>
         </div>
         <div className=" py-16" id="mentor">
-          <SecHeader title={"Our Student Ambassadors"} />
+          <SecHeader title={"Industry Mentors"} />
           <p className="max-w-screen-xl mx-auto w-auto text-center text-2xl font-light">
             Stay tuned... Coming Soon
           </p>
