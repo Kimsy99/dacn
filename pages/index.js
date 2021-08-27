@@ -37,8 +37,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <br />
-        <HomeBanner />
+        {/* <HomeBanner /> */}
         {/* <ProjectBanners /> */}
       </main>
     </div>

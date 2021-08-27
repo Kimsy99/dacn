@@ -64,7 +64,7 @@ const Navbar = () => {
             </Link>
             <div className="p-2">
               <div className="dropdown inline-block relative">
-                <button className="font-semibold py-2 px-4 rounded inline-flex items-center">
+                <button className="font-bold py-2 px-2 rounded inline-flex items-center">
                   <span className="mr-1">About</span>
                   <svg
                     className="fill-current h-4 w-4"
@@ -115,7 +115,7 @@ const Navbar = () => {
             </Link> */}
             <div className="p-2">
               <div className="dropdown inline-block relative">
-                <button className="font-semibold py-2 px-4 rounded inline-flex items-center">
+                <button className="font-bold py-2 px-2 rounded inline-flex items-center">
                   <span className="mr-1">Project</span>
                   <svg
                     className="fill-current h-4 w-4"

@@ -64,17 +64,28 @@ a {
 }
 .image-bg-1{
   background: linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.3)
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ),url("../public/coffee-analysis.png");
+  /* background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),url("../public/hero-background.png"); */
+  min-height: 400px;
+}
+.image-bg-2{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
   ),url("../public/hero-background.png");
   /* background: linear-gradient(
     rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.7)
   ),url("../public/hero-background.png"); */
-  min-height: 300px;
+  min-height: 400px;
 }
 .image-banner{
-  min-height: 300px;
+  min-height: 400px;
   
 }
 .home-btn-1{
@@ -88,4 +99,18 @@ a {
 .dropdown:hover .dropdown-menu {
   display: block;
   z-index: 199;
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }
