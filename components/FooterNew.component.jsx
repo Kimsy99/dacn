@@ -24,7 +24,7 @@ function Footer() {
               <h2 className="cursor-pointer">Students</h2>
               {/* <h2 className="cursor-pointer">Student Ambassadors</h2> */}
             {/* </div> */}
-            <div className=" text-base text-color f-f-l">
+            <div className="my-4 text-base text-color f-f-l">
               <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   <Link href="/about#who-we-are">DACN Founders</Link>
@@ -35,15 +35,6 @@ function Footer() {
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   <Link href="/about#ambassadors">Student Ambassadors</Link>
                 </li>
-                {/* <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  Careers
-                </li>
-                <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">Help</li>
-                <li className="cursor-pointer pt-4 lg:py-0">Privacy Policy</li> */}
-              </ul>
-            </div>
-            <div className="my-6 text-base text-color f-f-l">
-              <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   <Link href="/student">Students</Link>
                 </li>
@@ -57,6 +48,16 @@ function Footer() {
                 <li className="cursor-pointer pt-4 lg:py-0">Privacy Policy</li> */}
               </ul>
             </div>
+            {/* <div className="my-6 text-base text-color f-f-l">
+              <ul className="md:flex items-center">
+                <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <Link href="/student">Students</Link>
+                </li>
+                <li className="cursor-pointer pt-4 lg:py-0">
+                  <Link href="/client">Clients</Link>
+                </li>
+              </ul>
+            </div> */}
             <div className="text-sm text-color mb-5 f-f-l">
               <p> © 2020 DACN. All rights reserved</p>
             </div>

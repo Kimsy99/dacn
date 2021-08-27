@@ -10,10 +10,6 @@ const ZeroWaste = () => {
   return (
     <div>
       <div className="mx-auto max-w-screen-xl">
-        <div className="mx-auto w-max">
-          {/* <Slider imageList={images} width={"90%"} height={"auto"} /> */}
-          <Slider imageList={images} width={1000} height={559} />
-        </div>
         <p className="text-3xl font-bold w-full text-center mx-5">
           Project Showcase 2 - Survey Analysis for Zero Waste Malaysias
         </p>
@@ -22,6 +18,12 @@ const ZeroWaste = () => {
           public’s behaviours involving household waste. This was a preliminary
           analysis of their first 4000 survey responses.
         </p>
+        <div className="mx-auto w-max md:block hidden">
+          <Slider imageList={images} width={1000} height={559} />
+        </div>
+        <div className="mx-auto w-max md:hidden block">
+          <Slider imageList={images} width={400} height={223} />
+        </div>
         <p className="w-full text-center italic my-10 mx-5">
           Problem Statement:{" "}
           <b>
@@ -54,7 +56,7 @@ const ZeroWaste = () => {
               Final product: 6 panels
             </h1>
             <br />
-            <p>
+            <p className="text-center">
               (only 2 out of the 6 is displayed here – the rest belongs to Zero
               Waste Malaysia)
             </p>

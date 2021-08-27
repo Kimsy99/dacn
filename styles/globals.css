@@ -46,8 +46,10 @@ a {
 }
 .custom-underline {
   position: relative;
+  text-decoration: underline;
+  text-decoration-color: #344ED0;
 }
-.custom-underline::after {
+/* .custom-underline::after {
   content: '';
   position: absolute;
   bottom: -0.125rem;
@@ -61,7 +63,7 @@ a {
   background-repeat: no-repeat;
 
   background-size: cover;
-}
+} */
 .image-bg-1{
   background: linear-gradient(
     rgba(0, 0, 0, 0.5), 
@@ -95,6 +97,16 @@ a {
 .home-btn-2{
   background: #83CFE1;
   color: #0F2543;
+}
+.home-btn-3{
+  color: #0F2543;
+  border: 1px solid #0F2543; 
+  transition-duration: 300ms;
+}
+.home-btn-3:hover{
+  color: #83CFE1;
+  border: 1px solid #0F2543; 
+  background: #0F2543; 
 }
 .dropdown:hover .dropdown-menu {
   display: block;

@@ -262,7 +262,7 @@ function Timeline() {
             information on data readiness, kindly refer to the table below:
           </p>
           <br />
-          <div className="w-12/12">
+          <div className="flex align-center justify-center">
             <Image
               className="mx-auto"
               src="/infographics/project-timeline-table.jpg"

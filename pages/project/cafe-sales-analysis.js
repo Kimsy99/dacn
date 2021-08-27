@@ -10,9 +10,6 @@ const CafeSales = () => {
   return (
     <div>
       <div className="mx-auto max-w-screen-xl">
-        <div className="mx-auto w-max">
-          <Slider imageList={images} width={1000} height={559} />
-        </div>
         <p className="text-3xl font-bold w-full text-center mx-5">
           Project Showcase 1 - Cafe Sales Analytics
         </p>
@@ -21,6 +18,12 @@ const CafeSales = () => {
           to launch a new commission scheme to motivate salesment to up their
           sales during MCO 3.0 in May 2021
         </p>
+        <div className="mx-auto w-max md:block hidden">
+          <Slider imageList={images} width={1000} height={559} />
+        </div>
+        <div className="mx-auto w-max md:hidden block">
+          <Slider imageList={images} width={400} height={223} />
+        </div>
         <p className="w-full text-center italic my-10 mx-5">
           Problem Statement:{" "}
           <b>
@@ -52,7 +55,7 @@ const CafeSales = () => {
               Final Recommendation
             </h1>
             <br />
-            <p>
+            <p className="text-center">
               To provide bonuses to employees only when an employees’ sales
               amount has achieved a minimum threshold.
             </p>

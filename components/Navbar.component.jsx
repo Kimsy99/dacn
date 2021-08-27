@@ -62,7 +62,7 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            <div className="p-2">
+            <div className="p-1">
               <div className="dropdown inline-block relative">
                 <button className="font-bold py-2 px-2 rounded inline-flex items-center">
                   <span className="mr-1">About</span>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 Projects
               </a>
             </Link> */}
-            <div className="p-2">
+            <div className="p-1">
               <div className="dropdown inline-block relative">
                 <button className="font-bold py-2 px-2 rounded inline-flex items-center">
                   <span className="mr-1">Project</span>
@@ -165,11 +165,47 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="/student">
+            {/* <Link href="/student">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center">
                 Students
               </a>
-            </Link>
+            </Link> */}
+            <div className="p-1">
+              <div className="dropdown inline-block relative">
+                <button className="font-bold py-2 px-2 rounded inline-flex items-center">
+                  <span className="mr-1">Get Involed</span>
+                  <svg
+                    className="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                  </svg>
+                </button>
+                <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
+                  <li className="">
+                    <Link href="/student">
+                      <a
+                        className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="#data"
+                      >
+                        Students
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link href="/student/#mentor">
+                      <a
+                        className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Professionals
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
             {/* end */}
           </div>
         </div>

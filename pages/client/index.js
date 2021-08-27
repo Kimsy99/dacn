@@ -5,6 +5,7 @@ import Hero from "../../components/Hero.component";
 import ProjectScopeCard from "../../components/ProjectScopeCard.component";
 import SecHeader from "../../components/SecHeader.component";
 import Faq from "../../components/faq.component";
+import Link from "next/link";
 const data = [
   {
     id: 1,
@@ -39,6 +40,19 @@ const Client = () => {
       <Hero title="For Clients" />
       <div className="mx-auto divide-y">
         <div className=" mx-auto max-w-screen-xl py-16">
+          <div className="sm:flex sm:justify-center ">
+            <div className="text-center mb-10">
+              <div className="rounded-md ">
+                <a
+                  className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md home-btn-3 md:py-4 md:text-lg md:px-10 hover:ring-4 "
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSf1lryksJMNF5E0crApRz-QYJnqBkB2mUVEhUwPxIEIcoqw6A/viewform"
+                  target="__blank"
+                >
+                  SIGN UP AS A CLIENT NOW
+                </a>
+              </div>
+            </div>
+          </div>
           <SecHeader title="Our Value Add" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto w-8/12 my-10 max-w-screen-xl mx-auto">
             {data.map((obj) => {
@@ -56,6 +70,19 @@ const Client = () => {
           <SecHeader title="On-boarding Process" />
           <div className="mx-auto max-w-screen-md">
             <Faq />
+          </div>
+          <div className=" mt-5 sm:flex sm:justify-center ">
+            <div className="text-center mb-10">
+              <div className="rounded-md shadow">
+                <a
+                  className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md home-btn-3 md:py-4 md:text-lg md:px-10 hover:ring-4 "
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSf1lryksJMNF5E0crApRz-QYJnqBkB2mUVEhUwPxIEIcoqw6A/viewform"
+                  target="__blank"
+                >
+                  SIGN UP AS A CLIENT NOW
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
