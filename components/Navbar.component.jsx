@@ -173,7 +173,7 @@ const Navbar = () => {
             <div className="p-1">
               <div className="dropdown inline-block relative">
                 <button className="font-bold py-2 px-2 rounded inline-flex items-center">
-                  <span className="mr-1">Get Involed</span>
+                  <span className="mr-1">Get Involved</span>
                   <svg
                     className="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
