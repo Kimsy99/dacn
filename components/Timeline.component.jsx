@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 function Timeline() {
-  const [question, setquestion] = useState(0);
+  const [question, setquestion] = useState();
   return (
     <>
       <div className="container mx-auto">
@@ -264,7 +264,7 @@ function Timeline() {
           <br />
           <div className="w-12/12">
             <Image
-              class="mx-auto"
+              className="mx-auto"
               src="/infographics/project-timeline-table.jpg"
               alt="What we do"
               layout="intrinsic"

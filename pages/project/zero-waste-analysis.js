@@ -1,32 +1,39 @@
 import React from "react";
-import Slideshow from "../../components/HomeSlideShow.component";
 import Slider from "@madzadev/image-slider";
 import "@madzadev/image-slider/dist/index.css";
 const images = [
-  { url: "/showcase/cafe-sales/ABC-1.png" },
-  { url: "/showcase/cafe-sales/ABC-2.png" },
+  { url: "/showcase/zero-waste/ZWM-1.png" },
+  { url: "/showcase/zero-waste/ZWM-2.png" },
+  { url: "/showcase/zero-waste/ZWM-3.png" },
 ];
-const CafeSales = () => {
+const ZeroWaste = () => {
   return (
     <div>
       <div className="mx-auto max-w-screen-xl">
         <div className="mx-auto w-max">
+          {/* <Slider imageList={images} width={"90%"} height={"auto"} /> */}
           <Slider imageList={images} width={1000} height={559} />
         </div>
         <p className="text-3xl font-bold w-full text-center mx-5">
-          Project Showcase 1 - Cafe Sales Analytics
+          Project Showcase 2 - Survey Analysis for Zero Waste Malaysias
         </p>
         <p className="w-full text-center italic my-10 mx-5">
-          ABC Cafe (not real name to protect the privacy of our client) wanted
-          to launch a new commission scheme to motivate salesment to up their
-          sales during MCO 3.0 in May 2021
+          Zero Waste Malaysia recently launched a public survey to guage the
+          public’s behaviours involving household waste. This was a preliminary
+          analysis of their first 4000 survey responses.
         </p>
         <p className="w-full text-center italic my-10 mx-5">
           Problem Statement:{" "}
           <b>
-            {" "}
-            What’s the best commission scheme we can give our staff to improve
-            sales?
+            To derive the following key results from the public survey;
+            <ul className="list-disc list-inside">
+              <li className="indent">
+                % of Malaysians with misconception on trash Waste
+              </li>
+              <li className="indent">
+                Separation and Composting behaviour in households
+              </li>
+            </ul>
           </b>
         </p>
 
@@ -34,27 +41,22 @@ const CafeSales = () => {
           <div className="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm content-start">
             <h1 className="sm:text-2xl text-xl font-medium">Our Process</h1>
             <ol className="list-decimal list-outside mx-4">
-              <li>Data collection (Point-of-Sales System)</li>
               <li>
-                Data cleaning, transformation sequence and dashboard creation
+                Data cleaning (coded open-ended questions, streamlined answers
+                from the 3 languages, created summary tables)
               </li>
-              <li>
-                Dashboard Analysis:
-                <ol className="list-disc list-inside">
-                  <li className="indent">Sales by product, by staff</li>
-                  <li className="indent">Product cost and gross margins</li>
-                </ol>
-              </li>
+              <li>Dashboard Creation</li>
+              <li>Data Analysis</li>
             </ol>
           </div>
           <div className="flex flex-col items-center bg-white p-4 shadow-xl rounded-lg max-w-sm content-start">
             <h1 className="sm:text-2xl text-xl font-medium">
-              Final Recommendation
+              Final product: 6 panels
             </h1>
             <br />
             <p>
-              To provide bonuses to employees only when an employees’ sales
-              amount has achieved a minimum threshold.
+              (only 2 out of the 6 is displayed here – the rest belongs to Zero
+              Waste Malaysia)
             </p>
           </div>
         </div>
@@ -63,4 +65,4 @@ const CafeSales = () => {
   );
 };
 
-export default CafeSales;
+export default ZeroWaste;

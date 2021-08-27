@@ -23,7 +23,7 @@ function Footer() {
               <h2 className="cursor-pointer">Students</h2>
               {/* <h2 className="cursor-pointer">Student Ambassadors</h2> */}
             {/* </div> */}
-            <div className="my-6 text-base text-color f-f-l">
+            <div className=" text-base text-color f-f-l">
               <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
                   DACN Founders
@@ -67,7 +67,7 @@ function Footer() {
               height={36}
             />
             <Image
-              src="/icons/insta.svg"
+              src="/icons/instagram.svg"
               alt="Vercel Logo"
               width={36}
               height={36}
@@ -79,17 +79,19 @@ function Footer() {
               height={36}
             />
             <Image
-              src="/icons/twitter.svg"
-              alt="Vercel Logo"
-              width={36}
-              height={36}
-            />
-            <Image
               src="/icons/youtube.svg"
               alt="Vercel Logo"
               width={36}
               height={36}
             />
+            <a href="mailto:dacn.malaysia@gmail.com">
+              <Image
+                src="/icons/gmail.svg"
+                alt="Vercel Logo"
+                width={36}
+                height={36}
+              />
+            </a>
             <div className="mr-4"></div>
             <div></div>
           </div>

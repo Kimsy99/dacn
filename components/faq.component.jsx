@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 function Faq() {
-  const [question, setquestion] = useState(0);
+  const [question, setquestion] = useState();
   return (
     <>
       <div className="container mx-auto">

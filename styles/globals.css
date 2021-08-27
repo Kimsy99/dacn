@@ -114,3 +114,9 @@ a {
   background: #efefef;
   text-align: center;
 }
+.indent {
+  text-indent: 1.5em;
+}
+.indent2 {
+  text-indent: 3.0em;
+}
